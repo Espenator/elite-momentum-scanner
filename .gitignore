@@ -1,0 +1,109 @@
+# Elite Momentum Scanner - .gitignore
+
+# =============================================================================
+# CREDENTIALS & SENSITIVE DATA (CRITICAL - Never commit these!)
+# =============================================================================
+
+# Google API credentials
+credentials.json
+token.json
+token.pickle
+*.pickle
+service_account.json
+client_secret*.json
+
+# API keys and secrets
+.env
+.env.local
+.env.production
+config.ini
+secrets.yaml
+api_keys.txt
+
+# =============================================================================
+# OUTPUT FILES (Regenerated on each run)
+# =============================================================================
+
+# Scanner outputs
+output/
+results/
+exports/
+*.csv
+*.xlsx
+!requirements.txt
+
+# TradingView watchlist exports
+watchlist_*.txt
+tv_watchlist_*.txt
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# =============================================================================
+# IDE & EDITOR
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# =============================================================================
+# OS FILES
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =============================================================================
+# LOGS & TEMPORARY
+# =============================================================================
+
+# Logs
+logs/
+*.log
+scanner_*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Cache
+.cache/
+*.cache
